@@ -11,7 +11,7 @@ export class HeaderComponent {
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    const bannerHeight = window.innerHeight / 2; // Change this value if needed
+    const bannerHeight = window.innerHeight / 10; // Change this value if needed
     this.isScrolled = window.pageYOffset > bannerHeight;
   }
 }

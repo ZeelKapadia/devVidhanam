@@ -7,4 +7,20 @@ import { Component } from '@angular/core';
 })
 export class WhyComponent {
 
+
+  types = [{
+    title: "",
+    shloka: "",
+    description: ""
+  },
+  {
+    title: "",
+    shloka: "",
+    description: ""
+  },
+  {
+    title: "",
+    shloka: "",
+    description: ""
+  },]
 }

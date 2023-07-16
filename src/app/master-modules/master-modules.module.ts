@@ -18,7 +18,12 @@ import { FaqComponent } from './faq/faq.component';
 import { ContactComponent } from './contact/contact.component';
 import { PortfoliodetailsComponent } from './portfoliodetails/portfoliodetails.component';
 import { FormComponent } from './form/form.component';
-
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { RouterModule } from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from "@angular/common/http";
+import { ShowDefaultContentComponent } from './home/show-default-content/show-default-content.component'
+import { ModalformComponent } from './modalform/modalform.component';
 @NgModule({
   declarations: [
     HeroComponent,
@@ -35,12 +40,19 @@ import { FormComponent } from './form/form.component';
     FaqComponent,
     ContactComponent,
     PortfoliodetailsComponent,
-    FormComponent
+    FormComponent,
+    ShowDefaultContentComponent,
+    ModalformComponent
   ],
   imports: [
     CommonModule,
     MasterModulesRoutingModule,
-    MasterLayoutModule
+    RouterModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MasterLayoutModule,
+    SlickCarouselModule,
+    HttpClientModule
   ]
 })
 export class MasterModulesModule { }

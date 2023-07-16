@@ -1,0 +1,55 @@
+<div class="modal fade" id="modalMedia" tabindex="-1" role="dialog" aria-hidden="true" data-keyboard="false"
+    #childModal>
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Details</h3>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <form class="php-email-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()" ngNativeValidate>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label for="name">Your Name</label>
+                                <input type="text" name="name" class="form-control" id="name" required
+                                    formControlName="clientName">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="name">Your Email</label>
+                                <input type="email" class="form-control" name="email" id="email" required
+                                    formControlName="clientEmail">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Puja Type</label>
+                            <input type="text" class="form-control" name="subject" id="subject" required
+                                formControlName="pujaTitle" readonly [disabled]="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Puja Description</label>
+                            <input type="text" class="form-control" name="subject" id="subject" required
+                                formControlName="pujaDescription" readonly [disabled]="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Subject</label>
+                            <input type="text" class="form-control" name="subject" id="subject" required
+                                formControlName="clientSubject">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Message</label>
+                            <textarea class="form-control" name="message" rows="7" required
+                                formControlName="clientMessage"></textarea>
+                        </div>
+                        <div class="my-3">
+                            <div class="loading" *ngIf="showLoader">Loading</div>
+                            <div class="sent-message" *ngIf="showMessage">Your message has been sent. Thank you!</div>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn" data-bs-dismiss="modal">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

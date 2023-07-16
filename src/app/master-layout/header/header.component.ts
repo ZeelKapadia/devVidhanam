@@ -1,4 +1,5 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
+import { DataTransferService } from 'src/app/master-modules/services/service/data-transfer.service';
 
 @Component({
   selector: 'app-header',
@@ -10,6 +11,8 @@ export class HeaderComponent {
   isScrolled = false;
   class = "collapse navbar-collapse";
   isShow = false;
+
+  constructor(private scrollService: DataTransferService) { }
 
   onToggleName() {
     this.isShow = !this.isShow
@@ -28,5 +31,10 @@ export class HeaderComponent {
   onWindowScroll() {
     const bannerHeight = window.innerHeight / 10; // Change this value if needed
     this.isScrolled = window.pageYOffset > bannerHeight;
+  }
+
+
+  scrollToTarget(event: string) {
+    this.scrollService.scrollToElement(event);
   }
 }

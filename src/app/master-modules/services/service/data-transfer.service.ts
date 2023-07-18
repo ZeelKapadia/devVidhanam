@@ -13,7 +13,7 @@ export class DataTransferService {
   sendLang: Subject<any> = new Subject<any>()
   setLang: Observable<any> = this.sendLang as Observable<any>
 
-  httpUrl = "http://localhost:3000/api/sendMail";
+  httpUrl = "https://apidevi.onrender.com/api/sendMail";
 
   constructor(private http: HttpClient) { }
 

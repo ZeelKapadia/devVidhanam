@@ -8,9 +8,9 @@
 
         <div class="row">
             <ngx-slick-carousel #slickModal="slick-carousel" [config]="slideConfig" class="carousel">
-                <div ngxSlickItem class="col-xl-3 col-md-6 d-flex align-items-stretch mx-2 mt-md-0 slide fixedHeight"
-                    data-aos="zoom-in" data-aos-delay="100" *ngFor="let card of cardsList;">
-                    <div class="icon-box">
+                <div ngxSlickItem class="col-xl-3 d-flex align-items-stretch mt-md-0 slide" data-aos="zoom-in"
+                    data-aos-delay="100" *ngFor="let card of cardsList;">
+                    <div class="icon-box fixedHeight mx-2">
                         <h4 class="text-center" style="color: #e47d1d;"><a href=""><strong>{{card.title}}</strong></a>
                         </h4>
                         <h6><a href="">{{card.shloka}}</a></h6>

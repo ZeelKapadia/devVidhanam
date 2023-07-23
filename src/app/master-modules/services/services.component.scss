@@ -62,7 +62,39 @@ p{
 }
 
 .fixedHeight{
-  min-height: 410px;
+  min-height: 55vh;
+}
+
+@media screen and (min-width: 480px) and (max-width:768px){
+  .fixedHeight{
+    min-height: 107Vh;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width:1024px) {
+  .fixedHeight{
+    min-height: 104Vh !important;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width:1199px) {
+  .fixedHeight{
+    min-height: 75VH !important;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width:1248px) {
+  .fixedHeight{
+    min-height: 65VH !important;
+  }
+}
+@media screen and (min-width: 1249px) and (max-width:2217px) {
+  .fixedHeight{
+    min-height: 29Vh !important;
+  }
+}
+@media screen and (max-width: 2218px) {
+  .fixedHeight{
+    min-height: 55Vh !important;
+  }
 }
 
 .scrollContent{

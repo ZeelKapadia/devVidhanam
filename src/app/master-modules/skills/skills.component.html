@@ -3,10 +3,9 @@
     <div class="container" data-aos="fade-up">
         <div class="row">
             <div class="col-12">
-                <ngx-slick-carousel #slickModal="slick-carousel" [config]="slideConfig" class="carousel">
-                    <div ngxSlickItem data-aos="fade-right" class="col-lg-12" data-aos-delay="100"
-                        *ngFor="let imagList of listsImages">
-                        <img [src]="imagList" alt="" style="min-width:-webkit-fill-available">
+                <ngx-slick-carousel #slickModal="slick-carousel" [config]="slideConfig" class="full-width">
+                    <div ngxSlickItem *ngFor=" let imagList of listsImages">
+                        <img [src]="imagList" alt="">
                     </div>
                 </ngx-slick-carousel>
             </div>

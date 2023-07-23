@@ -5,6 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MasterModulesModule } from './master-modules/master-modules.module';
 
+// import * as firebase from "firebase/app";
+import { environments } from './Commons.environment';
+
+// firebase.initializeApp(environments.firebaseConfig);
+
 @NgModule({
   declarations: [
     AppComponent,

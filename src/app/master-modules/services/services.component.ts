@@ -14,12 +14,28 @@ export class ServicesComponent {
     "slidesToScroll": 1,
     "dots": false,
     "infinite": true,
-    "autoplay": true,
+    // "autoplay": true,
     "autoplaySpeed": 1000,
     // "prevArrow": `<button class="slick-prev slick-arrow" aria-label="Previous" type="button">Previous</button>`,
     // "nextArrow": `<button class="slick-next slick-arrow" aria-label="Next" type="button">Next</button>`,
     "prevArrow": false,
     "nextArrow": false,
+    responsive: [
+      {
+        breakpoint: 768, // Screen width at which the settings will change
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   cardsENList = [

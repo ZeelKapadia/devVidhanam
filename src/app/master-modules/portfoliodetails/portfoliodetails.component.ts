@@ -74,7 +74,5 @@ For better intelligence, anointing should be done with milk mixed with sugar.` }
     }
     this.dataToBind.next(senderData);
 
-
-
   }
 }

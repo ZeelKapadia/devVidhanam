@@ -45,3 +45,27 @@ li.active{
   border: 2px solid #cb3a00;
   color: #fff;
 }
+
+
+
+#hero {
+  width: 100%;
+
+  min-height: 80VH;
+  background: #ffedd8;
+  // background: #981f1d;
+  // background: #fff6f4;
+}
+
+#hero .container {
+  padding-top: 72px;
+}
+
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 100%;
+  color: #e47d1d;
+}
+

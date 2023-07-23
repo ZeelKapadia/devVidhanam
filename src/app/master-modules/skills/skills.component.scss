@@ -65,3 +65,13 @@
   transition: 0.9s;
   background-color: #700603;
 }
+
+img{
+  // max-width: 100%;
+  // margin-bottom: 10%;
+  width: -webkit-fill-available;
+}
+
+.full-width{
+  align-items: center;
+}

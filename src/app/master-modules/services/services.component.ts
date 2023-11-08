@@ -1,21 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, OnChanges, SimpleChanges } from '@angular/core';
 import { DataTransferService } from './service/data-transfer.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-services',
   templateUrl: './services.component.html',
   styleUrls: ['./services.component.scss']
 })
-export class ServicesComponent {
+export class ServicesComponent implements OnChanges {
 
   slideConfig = {
     "slidesToShow": 3,
-    "slidesToScroll": 1,
+    "slidesToScroll": 3,
     "dots": false,
     "infinite": true,
-    // "autoplay": true,
-    "autoplaySpeed": 1000,
+    "autoplay": true,
+    "autoplaySpeed": 3000,
     // "prevArrow": `<button class="slick-prev slick-arrow" aria-label="Previous" type="button">Previous</button>`,
     // "nextArrow": `<button class="slick-next slick-arrow" aria-label="Next" type="button">Next</button>`,
     "prevArrow": false,
@@ -25,7 +26,7 @@ export class ServicesComponent {
         breakpoint: 768, // Screen width at which the settings will change
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
+          slidesToScroll: 2,
         },
       },
       {
@@ -69,6 +70,16 @@ For better intelligence, anointing should be done with milk mixed with sugar.`
     //   shloka: "",
     //   description: "coming soon"
     // },
+    {
+      title: "Tulsi Archana",
+      shloka: "",
+      description: `Labhte Sutran Bhakti
+Ante Vishnupadam Labhet.
+Tulsi Bhurmahalakshmi:
+Padmini Sri Hari Priya.
+
+Tulsi leaf is very dear to Shri Narayan. And the person who devotedly offers Tulsi to the Lord. He attains enjoyment and salvation in life. Offering Tulsi even in normal days is beneficial, then in Purushottam month, by worshiping it, the attainment of God himself is certain.`
+    },
   ];
   cardsGUList = [
     // {
@@ -116,6 +127,16 @@ For better intelligence, anointing should be done with milk mixed with sugar.`
     //   shloka: "",
     //   description: "ટૂક સમયમાં આવી રહ્યું છે"
     // },
+    {
+      title: "તુલસી અર્ચના",
+      shloka: "",
+      description: `લભતે સુત્રન ભક્તિ
+અન્તે વિષ્ણુપદમ્ લભેત્ ।
+તુલસી ભૂર્મહાલક્ષ્મીઃ
+પદ્મિની શ્રી હરિ પ્રિયા.
+
+શ્રી નારાયણને તુલસીના પાન અતિ પ્રિય છે. અને જે વ્યક્તિ ભક્તિપૂર્વક ભગવાનને તુલસી અર્પણ કરે છે. તેને જીવનમાં આનંદ અને મોક્ષની પ્રાપ્તિ થાય છે. સામાન્ય દિવસોમાં પણ તુલસી અર્પણ કરવાથી લાભ થાય છે, તો પુરુષોત્તમ માસમાં તેની પૂજા કરવાથી સ્વયં ભગવાનની પ્રાપ્તિ નિશ્ચિત છે.`
+    },
   ];
   cardsHIList = [
     {
@@ -148,13 +169,27 @@ For better intelligence, anointing should be done with milk mixed with sugar.`
     //   shloka: "",
     //   description: "जल्द आ रहा है"
     // },
+    {
+      title: "तुलसी अर्चना",
+      shloka: "",
+      description: `लभते सुतरां भक्तिं 
+अन्ते विष्णुपदं लभेत्।
+तुलसी भूर्महालक्ष्मी: 
+पद्मिनी श्रीर्हरिप्रिया।।
+
+श्री नारायण को तुलसी पत्र अतिशय प्रिय है। और जो व्यक्ति श्रद्धापूर्वक प्रभु को तुलसी अर्पण करता है। वह जीवन में भोग और मोक्ष प्राप्त करता है। सामान्य दिनों में भी तुलसी अर्पित करना मोक्षदायक है तो पुरुषोत्तममास में तो यह पूजन करने से स्वयं भगवान की प्राप्ति निश्चित है।
+`
+    },
   ];
 
   cardsList = this.cardsENList;
+  language: any = "";
 
-  constructor(private dataTransfer: DataTransferService, private router: Router, private activatedRoute: ActivatedRoute) {
-
+  constructor(private dataTransfer: DataTransferService, private router: Router, private activatedRoute: ActivatedRoute, private translateService: TranslateService) {
+    this.language = this.dataTransfer.getLanguage();
+    // this.cardsList = this.language == "hi" ? this.cardsHIList : this.language == "gu" ? this.cardsGUList : this.cardsENList;
   }
+
 
   onclick(index: number) {
     this.dataTransfer.sendData.next(index);
@@ -164,4 +199,7 @@ For better intelligence, anointing should be done with milk mixed with sugar.`
     this.router.navigate(["/web/moreServices"], { relativeTo: this.activatedRoute })
   }
 
+  ngOnChanges(changes: SimpleChanges): void {
+    this.translateService.use(this.language);
+  }
 }

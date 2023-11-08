@@ -1,4 +1,5 @@
 import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { DataTransferService } from 'src/app/master-modules/services/service/data-transfer.service';
 
 @Component({
@@ -12,7 +13,15 @@ export class HeaderComponent {
   class = "collapse navbar-collapse";
   isShow = false;
 
-  constructor(private scrollService: DataTransferService) { }
+  supportLanguages = ["en", "hi", "gu"]
+
+  constructor(private scrollService: DataTransferService, private translateService: TranslateService) {
+    this.translateService.addLangs(this.supportLanguages);
+    this.translateService.setDefaultLang('en');
+
+    // const browserLang = this.translateService.getBrowserLang();
+    // this.translateService.use(browserLang);
+  }
 
   onToggleName() {
     this.isShow = !this.isShow
@@ -35,6 +44,16 @@ export class HeaderComponent {
 
 
   scrollToTarget(event: string) {
-    this.scrollService.scrollToElement(event);
+    this.scrollService.scrollToElements(event);
+  }
+
+  scrollToElement(elementId: string) {
+    this.scrollService.setElementToScroll(elementId);
+  }
+
+  onChange_Language(event: any) {
+    const lang = event.target.value;
+    this.translateService.use(lang);
+    this.scrollService.sendLang.next(lang);
   }
 }

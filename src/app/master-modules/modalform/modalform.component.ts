@@ -1,6 +1,7 @@
-import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, SimpleChanges, ViewChild } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { Location } from '@angular/common';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-modalform',
@@ -14,8 +15,9 @@ export class ModalformComponent implements OnInit {
   showMessage = false;
   showLoader = false;
   dismissForm = false;
+  language = ""
 
-  constructor(private fb: FormBuilder, private location: Location) { }
+  constructor(private fb: FormBuilder) { }
 
   ngOnInit(): void {
     this.dataToBind
@@ -53,4 +55,5 @@ export class ModalformComponent implements OnInit {
       this.contactForm.reset();
     }
   }
+
 }

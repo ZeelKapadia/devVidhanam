@@ -1,17 +1,21 @@
-<app-hero id="home"></app-hero>
+<div id="home">
+    <app-hero id="home"></app-hero>
+</div>
 <main id="main">
     <!--  -->
     <app-skills></app-skills>
     <app-why></app-why>
-    <app-services></app-services>
+    <div id="services">
+        <app-services></app-services>
+    </div>
     <app-cta></app-cta>
     <app-portfolio></app-portfolio>
     <div class="container">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6" id="about">
                 <app-about></app-about>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6" id="contact">
                 <app-contact></app-contact>
             </div>
         </div>

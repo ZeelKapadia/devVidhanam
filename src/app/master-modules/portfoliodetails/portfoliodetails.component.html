@@ -5,7 +5,7 @@
                 <div class="card" style="width: 18rem;" [ngClass]="isActive == 1 ? 'active':''"
                     (click)="onSelectCard(1)">
                     <div class="card-body">
-                        <h5 class="card-title"> Jyotish</h5>
+                        <h5 class="card-title"> {{"Jyotish" | translate}}</h5>
                     </div>
                 </div>
             </div>
@@ -13,7 +13,7 @@
                 <div class="card" style="width: 18rem;" [ngClass]="isActive == 2 ? 'active':''"
                     (click)="onSelectCard(2)">
                     <div class="card-body">
-                        <h5 class="card-title">Karm Kand</h5>
+                        <h5 class="card-title">{{"KarmKand" | translate}}</h5>
                     </div>
                 </div>
             </div>
@@ -21,7 +21,7 @@
                 <div class="card" style="width: 18rem;" [ngClass]="isActive == 3 ? 'active':''"
                     (click)="onSelectCard(3)">
                     <div class="card-body">
-                        <h5 class="card-title">Shastra Parichay</h5>
+                        <h5 class="card-title">{{"Shastra Parichay" | translate}}</h5>
                     </div>
                 </div>
             </div>
@@ -32,20 +32,19 @@
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
                         <div class="card">
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item" *ngFor="let jyotish of jyotishList;let i=index"
+                                <li class="list-group-item" *ngFor="let jyotish of jyotishList;let i=index;"
                                     [ngClass]="{ 'active': i === activeIndex }" (click)="setActive(i,jyotish)">
-                                    {{jyotish.value}}</li>
+                                    {{getTranslated(jyotish.value)}}</li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">{{title}}</h5>
-                                <p class="card-text">{{description}}</p>
+                                <h5 class="card-title">{{title | translate}}</h5>
+                                <p class="card-text">{{description | translate}}</p>
                                 <button type="button" class="btn" (click)="onClickButton()" data-bs-toggle="modal"
-                                    data-bs-target="#modalMedia">Book
-                                    Now</button>
+                                    data-bs-target="#modalMedia">{{"Book Now" | translate}}</button>
                             </div>
                         </div>
                     </div>
@@ -57,7 +56,7 @@
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item" *ngFor="let jyotish of karmKandList;let i=index"
                                     [ngClass]="{ 'active': i === activeIndex }" (click)="setActive(i,jyotish)">
-                                    {{jyotish.value}}
+                                    {{getTranslated(jyotish.value)}}
                                 </li>
                             </ul>
                         </div>
@@ -66,11 +65,10 @@
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">{{title}}</h5>
-                                <p class="card-text">{{description}}</p>
+                                <h5 class="card-title">{{title | translate}}</h5>
+                                <p class="card-text">{{description | translate}}</p>
                                 <button type="button" class="btn" (click)="onClickButton()" data-bs-toggle="modal"
-                                    data-bs-target="#modalMedia">Book
-                                    Now</button>
+                                    data-bs-target="#modalMedia">{{"Book Now"|translate}}</button>
                             </div>
                         </div>
                     </div>
@@ -82,7 +80,7 @@
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item" *ngFor="let jyotish of shastraList;let i=index"
                                     [ngClass]="{ 'active': i === activeIndex }" (click)="setActive(i,jyotish)">
-                                    {{jyotish.value}}
+                                    {{getTranslated(jyotish.value)}}
 
                                 </li>
                             </ul>
@@ -92,11 +90,10 @@
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">{{title}}</h5>
-                                <p class="card-text">{{description}}</p>
+                                <h5 class="card-title">{{title | translate}}</h5>
+                                <p class="card-text">{{description | translate}}</p>
                                 <button type="button" class="btn" (click)="onClickButton()" data-bs-toggle="modal"
-                                    data-bs-target="#modalMedia">Book
-                                    Now</button>
+                                    data-bs-target="#modalMedia">{{"Book Now" | translate}}</button>
                             </div>
                         </div>
                     </div>

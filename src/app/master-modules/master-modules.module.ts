@@ -21,9 +21,15 @@ import { FormComponent } from './form/form.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from "@angular/common/http";
+import { HttpBackend, HttpClient, HttpClientModule } from "@angular/common/http";
 import { ShowDefaultContentComponent } from './home/show-default-content/show-default-content.component'
 import { ModalformComponent } from './modalform/modalform.component';
+
+
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+
+
 @NgModule({
   declarations: [
     HeroComponent,
@@ -52,7 +58,15 @@ import { ModalformComponent } from './modalform/modalform.component';
     ReactiveFormsModule,
     MasterLayoutModule,
     SlickCarouselModule,
-    HttpClientModule
-  ]
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: (http: HttpClient) => { return new TranslateHttpLoader(http, './assets/i18n/', '.json'); },
+        deps: [HttpClient]
+      }
+    })
+  ],
+  exports: [TranslateModule]
 })
 export class MasterModulesModule { }

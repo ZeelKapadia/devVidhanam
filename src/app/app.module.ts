@@ -4,11 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MasterModulesModule } from './master-modules/master-modules.module';
+import { environment } from 'src/environments/environment';
+import { provideFirebaseApp, initializeApp, FirebaseAppModule } from '@angular/fire/app';
+import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 
-// import * as firebase from "firebase/app";
-import { environments } from './Commons.environment';
-
-// firebase.initializeApp(environments.firebaseConfig);
+import { AnalyticsModule } from '@angular/fire/analytics';
 
 @NgModule({
   declarations: [
@@ -17,9 +17,13 @@ import { environments } from './Commons.environment';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MasterModulesModule
+    MasterModulesModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideFirestore(() => getFirestore()),
+    AnalyticsModule,
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

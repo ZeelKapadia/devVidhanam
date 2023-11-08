@@ -3,25 +3,87 @@
     <div class="container" data-aos="fade-up">
 
         <div class="section-title text-center">
-            <h2>Our services</h2>
+            <h2>{{"Our_Services"|translate}}</h2>
         </div>
 
         <div class="row">
             <ngx-slick-carousel #slickModal="slick-carousel" [config]="slideConfig" class="carousel">
                 <div ngxSlickItem class="col-xl-3 d-flex align-items-stretch mt-md-0 slide" data-aos="zoom-in"
-                    data-aos-delay="100" *ngFor="let card of cardsList;">
+                    data-aos-delay="100">
                     <div class="icon-box fixedHeight mx-2">
-                        <h4 class="text-center" style="color: #e47d1d;"><a href=""><strong>{{card.title}}</strong></a>
+                        <h4 class="text-center" style="color: #e47d1d;">
+                            <a href=""><strong>{{"ServiceVPTitle" | translate}}</strong></a>
                         </h4>
-                        <h6><a href="">{{card.shloka}}</a></h6>
-                        <p class="scrollContent">{{card.description}}</p>
+                        <h6><a style="text-decoration: none;">{{"ServiceVPShloka" | translate}}</a></h6>
+                        <p class="scrollContent">{{"ServiceVPDescription"|translate}}</p>
                         <div class="container-button">
                             <button class="oval-button" (click)="onNaviagte()">
-                                Show More
+                                {{"Show_More" | translate}}
                             </button>
                         </div>
                     </div>
                 </div>
+                <div ngxSlickItem class="col-xl-3 d-flex align-items-stretch mt-md-0 slide" data-aos="zoom-in"
+                    data-aos-delay="100">
+                    <div class="icon-box fixedHeight mx-2">
+                        <h4 class="text-center" style="color: #e47d1d;">
+                            <a href=""><strong>{{"ServiceBilTitle" | translate}}</strong></a>
+                        </h4>
+                        <h6><a style="text-decoration: none;">{{"ServiceBilShloka" | translate}}</a></h6>
+                        <p class="scrollContent">{{"ServiceBilDescription"|translate}}</p>
+                        <div class="container-button">
+                            <button class="oval-button" (click)="onNaviagte()">
+                                {{"Show_More" | translate}}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div ngxSlickItem class="col-xl-3 d-flex align-items-stretch mt-md-0 slide" data-aos="zoom-in"
+                    data-aos-delay="100">
+                    <div class="icon-box fixedHeight mx-2">
+                        <h4 class="text-center" style="color: #e47d1d;">
+                            <a href=""><strong>{{"ServiceSSPTitle" | translate}}</strong></a>
+                        </h4>
+                        <h6><a href="" style="text-decoration: none;">{{"ServiceSSPShloka" | translate}}</a></h6>
+                        <p class="scrollContent">{{"ServiceSSPDescription"|translate}}</p>
+                        <div class="container-button">
+                            <button class="oval-button" (click)="onNaviagte()">
+                                {{"Show_More" | translate}}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div ngxSlickItem class="col-xl-3 d-flex align-items-stretch mt-md-0 slide" data-aos="zoom-in"
+                    data-aos-delay="100">
+                    <div class="icon-box fixedHeight mx-2">
+                        <h4 class="text-center" style="color: #e47d1d;">
+                            <a href=""><strong>{{"ServiceRAATitle" | translate}}</strong></a>
+                        </h4>
+                        <h6><a href="" style="text-decoration: none;">{{"ServiceRAAShloka" | translate}}</a></h6>
+                        <p class="scrollContent">{{"ServiceRAADescription"|translate}}</p>
+                        <div class="container-button">
+                            <button class="oval-button" (click)="onNaviagte()">
+                                {{"Show_More" | translate}}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div ngxSlickItem class="col-xl-3 d-flex align-items-stretch mt-md-0 slide" data-aos="zoom-in"
+                    data-aos-delay="100">
+                    <div class="icon-box fixedHeight mx-2">
+                        <h4 class="text-center" style="color: #e47d1d;">
+                            <a href=""><strong>{{"ServiceTATitle" | translate}}</strong></a>
+                        </h4>
+                        <h6><a href="" style="text-decoration: none;">{{"ServiceTAShloka" | translate}}</a></h6>
+                        <p class="scrollContent">{{"ServiceTADescription"|translate}}</p>
+                        <div class="container-button">
+                            <button class="oval-button" (click)="onNaviagte()">
+                                {{"Show_More" | translate}}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
             </ngx-slick-carousel>
         </div>
     </div>

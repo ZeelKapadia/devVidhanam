@@ -1,4 +1,58 @@
 ul{
     margin-left: auto;
     margin-right: 0;
+    
 }
+
+/* You can add global styles to this file, and also import other style files */
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+header.scroll {
+  background-color: #ffedd8;
+}
+
+header.scroll a{
+  color: #e47d1d !important;
+}
+
+.navbar-brand{
+  font-weight: 500 !important;
+  color: #ffedd8;
+}
+
+.nav-link{
+ color: #e47d1d;
+ font-weight: 450 !important;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  z-index: 100;
+  background-color: transparent;
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+/* Add a custom class to the ul element containing the navbar items */
+ul.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center the items vertically in the navbar */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+

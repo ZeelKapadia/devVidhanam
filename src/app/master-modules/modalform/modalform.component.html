@@ -3,49 +3,44 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h3 class="modal-title">Details</h3>
+                <h3 class="modal-title">{{"Details"|translate}}</h3>
             </div>
             <div class="modal-body">
                 <div class="row">
                     <form class="php-email-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()" ngNativeValidate>
                         <div class="row">
                             <div class="form-group col-md-6">
-                                <label for="name">Your Name</label>
+                                <label for="name">{{"Your_Name" | translate}}</label>
                                 <input type="text" name="name" class="form-control" id="name" required
                                     formControlName="clientName">
                             </div>
                             <div class="form-group col-md-6">
-                                <label for="name">Your Email</label>
+                                <label for="name">{{"Your_Email" | translate}}</label>
                                 <input type="email" class="form-control" name="email" id="email" required
                                     formControlName="clientEmail">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="name">Puja Type</label>
+                            <label for="name">{{"Puja_Type"|translate}}</label>
                             <input type="text" class="form-control" name="subject" id="subject" required
                                 formControlName="pujaTitle" readonly [disabled]="true">
                         </div>
                         <div class="form-group">
-                            <label for="name">Puja Description</label>
+                            <label for="name">{{"Puja_Description" | translate}}</label>
                             <input type="text" class="form-control" name="subject" id="subject" required
                                 formControlName="pujaDescription" readonly [disabled]="true">
                         </div>
                         <div class="form-group">
-                            <label for="name">Subject</label>
-                            <input type="text" class="form-control" name="subject" id="subject" required
-                                formControlName="clientSubject">
-                        </div>
-                        <div class="form-group">
-                            <label for="name">Message</label>
+                            <label for="name">{{"Message"|translate}}</label>
                             <textarea class="form-control" name="message" rows="4" required
                                 formControlName="clientMessage"></textarea>
                         </div>
                         <div class="my-3">
-                            <div class="loading" *ngIf="showLoader">Loading</div>
-                            <div class="sent-message" *ngIf="showMessage">Your message has been sent. Thank you!</div>
+                            <div class="loading" *ngIf="showLoader">{{"Loading"|translate}}</div>
+                            <div class="sent-message" *ngIf="showMessage">{{"LoadingMessage" | translate}}</div>
                         </div>
                         <div class="text-center">
-                            <button type="submit" class="btn" data-bs-dismiss="modal">Book Now</button>
+                            <button type="submit" class="btn" data-bs-dismiss="modal">{{"Book Now"|translate}}</button>
                         </div>
                     </form>
                 </div>

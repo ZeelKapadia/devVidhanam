@@ -32,7 +32,12 @@
   font-size: 24px;
 }
 
-.services .icon-box h4 a {
+.services .icon-box h4 {
+  color: #981f1d !important;
+  transition: ease-in-out 0.3s !important;
+}
+
+a{
   color: #981f1d;
   transition: ease-in-out 0.3s;
 }
@@ -65,35 +70,25 @@ p{
   min-height: 55vh;
 }
 
-@media screen and (min-width: 480px) and (max-width:768px){
+@media screen and (min-width: 600px){
   .fixedHeight{
     min-height: 107Vh;
   }
 }
 
-@media screen and (min-width: 769px) and (max-width:1024px) {
+@media screen and (min-width: 768px) {
   .fixedHeight{
     min-height: 104Vh !important;
   }
 }
-@media screen and (min-width: 1025px) and (max-width:1199px) {
+@media screen and (min-width: 992px){
   .fixedHeight{
     min-height: 75VH !important;
   }
 }
-@media screen and (min-width: 1200px) and (max-width:1248px) {
+@media screen and (min-width: 1200px) {
   .fixedHeight{
     min-height: 65VH !important;
-  }
-}
-@media screen and (min-width: 1249px) and (max-width:2217px) {
-  .fixedHeight{
-    min-height: 29Vh !important;
-  }
-}
-@media screen and (max-width: 2218px) {
-  .fixedHeight{
-    min-height: 55Vh !important;
   }
 }
 
@@ -129,4 +124,10 @@ p{
 
 .oval-button:hover{
   background: #cb3a00
+}
+
+.slick-track,
+.slick-list {
+-webkit-perspective: 0;
+-webkit-backface-visibility: hidden;
 }

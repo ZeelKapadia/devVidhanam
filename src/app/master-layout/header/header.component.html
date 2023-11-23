@@ -33,7 +33,8 @@
                             (click)="scrollToTarget('contact')">{{"Contact" |
                             translate}}</a>
                     </li>
-                    <select class="form-select" aria-label="Default select example" (click)="onChange_Language($event)">
+                    <select class="form-select" aria-label="Default select example"
+                        (change)="onChange_Language($event)">
                         <!-- <option selected>Open this select menu</option> -->
                         <option value="en" selected>English</option>
                         <option value="hi">Hindi</option>

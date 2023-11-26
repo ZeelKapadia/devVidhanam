@@ -17,7 +17,7 @@ export class HeaderComponent {
 
   constructor(private scrollService: DataTransferService, private translateService: TranslateService) {
     this.translateService.addLangs(this.supportLanguages);
-    this.translateService.setDefaultLang('en');
+    this.translateService.setDefaultLang('hi');
 
     // const browserLang = this.translateService.getBrowserLang();
     // this.translateService.use(browserLang);

@@ -128,3 +128,29 @@
     min-height: 200px;
   }
 }
+
+.card {
+  max-width: 88% !important;
+}
+
+.card-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  // color: #a73705;
+  color: white;
+  padding: 20px;
+  transition: all 0.5s ease-in-out;
+  display: none;
+  text-size-adjust: auto;
+  font-size: larger;
+  text-align: justify;
+}
+
+.card:hover .card-text {
+  display: block;
+  transform: translateY(0);
+}

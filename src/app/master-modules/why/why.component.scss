@@ -139,9 +139,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255w, 0.5);
   // color: #a73705;
-  color: white;
+  color: #700603;
   padding: 20px;
   transition: all 0.5s ease-in-out;
   display: none;
@@ -153,4 +153,13 @@
 .card:hover .card-text {
   display: block;
   transform: translateY(0);
+}
+
+.card {
+  background-color: transparent;
+  border: none;
+}
+
+.card-body {
+  background-color: white;
 }

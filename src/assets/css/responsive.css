@@ -1,0 +1,164 @@
+@media only screen and (min-width: 0px) and (max-width: 500px){
+    .module-dropdown .input-group-append{
+        display: none
+    }
+
+    .module-dropdown .multiselect-dropdown-border{
+        margin-bottom: 3%
+    }
+
+    .input-group-append, .input-group-prepend{
+        display: none
+    }
+    .md-skin .page-heading{
+        margin-top: 18%
+    }
+
+    #search-input {
+        margin: 5px 10px !important
+    }
+    .select-input{
+        margin: 5px 0px !important
+    }
+    .input-group-append {
+        display: none
+    }
+    .multiselect-dropdown-border {
+        padding: 10px !important
+    }
+
+    .ibox-tools {
+        position: static;
+    }
+    .btn-group, .btn-group-vertical {
+        display: block;
+    }
+    .no-files .no-data-icon {
+        top: 19px !important;
+    }
+    .no-files {
+        height: 315px !important;
+        width: 315px !important;
+    }
+    
+    .hours-box .card{
+        margin-bottom: 7%
+    }
+
+    .data_info_space .MediaTitle .label
+    {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 576px){
+    .modal-dialog {
+        max-width: 800px;
+        margin: 1.75rem auto;
+    }
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 768px){
+    .full-screen{
+        margin-top: 5%
+    }
+    .modal-body .multiselect-dropdown{
+        margin: 1% 0
+    }
+    .group2 .btn {
+        margin: 4px 0;
+    }
+  
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 1024px){
+    /* #search-input {
+        margin: 0px 10px !important
+    } */
+    /* .select-input{
+        margin: 10px 0px !important
+    } */
+    .image img{
+        margin-left: 15px !important;
+    }
+    .input-group-append {
+        display: none
+    }
+    .multiselect-dropdown-border {
+        padding: 10px !important
+    }
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px){
+    .modal-dialog {
+        max-width: 1000px;
+        margin: 1.75rem auto;
+    }
+}
+
+@media screen and (min-width:1199px) and (max-width: 1366px){
+    
+    .input-group-append {
+        display: none
+    }
+    .multiselect-dropdown-border {
+        padding:0 5px !important
+    }
+
+    #search-input, .select-input{
+        margin: 0 5px !important
+    }
+}
+
+@media screen and (max-width: 1440px){
+    .action-grp a i {
+        margin: 2% 3px;
+    }
+}
+
+@media screen and (max-width: 1600px){
+    .back-shape{
+        position: absolute ;
+        top: 1% !important;
+        opacity: 0.4;
+        left: 50% !important;
+        right: 0 !important;
+    }
+
+}
+
+
+@media screen and (max-width: 768px){
+
+    .quotation .floating-input {
+        font-size: 14px;
+    }
+    .quotation-request .floating-input {
+        height: 40px !important;
+    }
+  
+  
+    .quotation-request .floating-input:focus ~ label, .floating-input:not(:placeholder-shown) ~ label {
+        top: -10px !important;
+    }
+    .work-number {
+        padding: 4px 12px !important;
+        height: 38px !important;
+        width: 38px !important;
+    }
+    .work-number h3{
+        font-size: 28px !important;
+    }
+
+    .quotation-request .wizard-content-1 .job-wizard-right-area .jw-top-title h2 {
+        font-size: 28px !important;
+    }
+
+    .work-name h2 {
+        margin-left: 12% !important;
+    }
+  }
+
+

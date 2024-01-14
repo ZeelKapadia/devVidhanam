@@ -39,7 +39,8 @@
               "src/assets/vendor/swiper/swiper-bundle.min.css",
               "node_modules/slick-carousel/slick/slick.scss",
               "node_modules/slick-carousel/slick/slick-theme.scss",
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/css/style.css"
             ],
             "scripts": [
               "src/assets/vendor/aos/aos.js",

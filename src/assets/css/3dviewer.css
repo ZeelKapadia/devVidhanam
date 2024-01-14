@@ -1,0 +1,35 @@
+/**
+ * Geometry icons, we have 2 of them:
+  * - A cube for 3D geometries
+  * - A tileset-thingy for 2D sheets
+ */
+ .adsk-viewing-viewer  leaf > lmvheader > geom_icon,
+ .adsk-viewing-viewer group > lmvheader > geom_icon {
+     display: inline-block;
+     background-repeat: no-repeat;
+     width: 24px;
+     height: 24px;
+     padding-left: 5px;
+     transform: translateY(6px);
+ }
+ 
+ 
+ .adsk-viewing-viewer .viewer-document-browser .settings-tabs ul li,
+ .adsk-viewing-viewer .viewer-document-browser .settings-tabs ul li a {
+     width: auto !important;
+ }
+ 
+ 
+ .adsk-viewing-viewer.dark-theme .mb-ext-tab-bar {
+     background-color: rgba(34, 34, 34, 0.9);
+     text-align: center;
+ }
+ 
+ .adsk-viewing-viewer.dark-theme .mb-ext-tab-bar-btn {
+     width: 40%;
+     height: 60%;
+     margin: auto;
+ }
+ 
+ 
+ 

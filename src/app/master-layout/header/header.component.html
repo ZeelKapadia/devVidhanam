@@ -1,4 +1,4 @@
-<header [ngClass]="{'scroll': isScrolled}">
+<header [ngClass]="{'scroll': isScrolled}" *ngIf="!isShowPujaDetail">
     <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
             <!-- <a class="navbar-brand" href="#">Dev Vidhanam</a> -->
@@ -45,3 +45,66 @@
         </div>
     </nav>
 </header>
+
+<!-- <header *ngIf="isShowPujaDetail">
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation" style="background: white">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <img alt="image" src="assets/img/logo/logo-dashboard.png" />
+                        </div>
+
+
+                    </li>
+                    <li (click)="addClasses('isJyotish')" [ngClass]="isJyotish">
+                        <a aria-expanded="false"><i class="mdi mdi-book-cog-outline"></i>
+                            <span class="nav-label">Jyotish</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse" [ngClass]="isJyotishChild" aria-expanded="false">
+                            <li><a>View Project</a></li>
+                            <li><a>Add Project</a></li>
+                        </ul>
+                    </li>
+                    <li (click)="addClasses('isKarmaKand')" [ngClass]="isKarmaKand" routerLinkActive="active">
+                        <a aria-expanded="false">
+                            <i class="mdi mdi-book-clock"></i>
+                            <span class="nav-label">Karma Kand</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse" routerLinkActive=" in " [ngClass]="isKarmaKandChild"
+                            aria-expanded="false">
+                            <li><a>Approvals</a></li>
+                            <li><a>Revisions</a></li>
+                        </ul>
+                    </li>
+                    <li (click)="addClasses('isSastraParichay')" [ngClass]="isSastraParichay">
+                        <a aria-expanded="false"><i class="mdi mdi-format-list-bulleted"></i>
+                            <span class="nav-label">Sastra Parichay</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse" [ngClass]="isSastraParichayChild"
+                            aria-expanded="false">
+                            <li><a>Add Task</a></li>
+                            <li><a>User - Task List</a></li>
+                            <li><a>Team - Task List</a></li>
+                            <li><a>Org. - Task List</a></li>
+                            <li><a>Task Templates</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav> -->
+
+<!-- <div id="page-wrapper" class="dashboard-1">
+            <div class="col-md-12">
+                <div class="row">
+                    <nav class="navbar navbar-default navbar-expand-md navbar-static-top white-bg headerBackground"
+                        style="margin-bottom: 0px; box-shadow: none;">
+                        <div class="container">
+                            <div class="width-20p">
+                                <a class="">{{title}}</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div> -->
+<!-- </div>
+</header> -->

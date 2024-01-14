@@ -8,7 +8,7 @@ import { BehaviorSubject, Observable, Subject } from 'rxjs';
 export class DataTransferService {
 
   sendData: Subject<number> = new Subject<number>()
-  setData: Observable<number> = this.sendData as Observable<number>;
+  getData: Observable<number> = this.sendData as Observable<number>;
 
   // scrollToElement: Subject<any> = new Subject<any>()
   // subsScrollToElement: Observable<any> = this.scrollToElement as Observable<any>;
@@ -19,12 +19,6 @@ export class DataTransferService {
   httpUrl = "https://apidevi.onrender.com/api/sendMail";
 
   constructor(private http: HttpClient) { }
-
-  getData() {
-    return this.setData.subscribe(response => {
-      return response;
-    })
-  }
 
   getLanguage() {
     return this.setLang.subscribe(response => {

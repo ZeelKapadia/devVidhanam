@@ -1,7 +1,7 @@
-ul{
-    margin-left: auto;
-    margin-right: 0;
-    
+ul {
+  margin-left: auto;
+  margin-right: 0;
+
 }
 
 /* You can add global styles to this file, and also import other style files */
@@ -13,21 +13,21 @@ header.scroll {
   background-color: #ffedd8;
 }
 
-header.scroll a{
+header.scroll a {
   color: #e47d1d !important;
 }
 
-.navbar-brand{
+.navbar-brand {
   font-weight: 500 !important;
   color: #ffedd8;
 }
 
-.nav-link{
- color: #e47d1d;
- font-weight: 450 !important;
+.nav-link {
+  color: #e47d1d;
+  font-weight: 450 !important;
 }
 
-header{
+header {
   position: fixed;
   top: 0;
   left: 0;
@@ -37,7 +37,7 @@ header{
   background-color: transparent;
 }
 
-a{
+a {
   text-decoration: none;
   cursor: pointer;
 }
@@ -52,7 +52,12 @@ a{
 ul.navbar-nav {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Center the items vertically in the navbar */
-    white-space: nowrap; /* Prevent text from wrapping */
+  align-items: center;
+  /* Center the items vertically in the navbar */
+  white-space: nowrap;
+  /* Prevent text from wrapping */
 }
 
+.width-20p {
+  min-width: 20% !important;
+}

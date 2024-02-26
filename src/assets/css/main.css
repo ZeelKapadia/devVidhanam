@@ -823,6 +823,7 @@ background-color: rgba(0, 0, 0, 0.10);}
 	margin-left: 10px;
 }
 .course-desc {
+	min-height: 287px;
 	padding: 10px 20px;
 	margin-top: 10px;
 	border-bottom: 1px solid #f4f4f4;

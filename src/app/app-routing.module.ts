@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './modules/home/home.component';
 
 const routes: Routes = [
-  { path: "", pathMatch: "full", loadChildren: () => import("./master-modules/master-modules.module").then(m => m.MasterModulesModule) }
+  { path: "", pathMatch: "full", component: HomeComponent }
 ];
 
 @NgModule({

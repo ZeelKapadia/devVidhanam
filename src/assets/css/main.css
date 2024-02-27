@@ -58,6 +58,7 @@ html,
 body {
 height: 100%;
 font-size: 16px;
+/* background:#ffedd8 !important; */
 color: #808080;
 font-family: 'Roboto', sans-serif;
 vertical-align: baseline;
@@ -823,7 +824,7 @@ background-color: rgba(0, 0, 0, 0.10);}
 	margin-left: 10px;
 }
 .course-desc {
-	min-height: 287px;
+	min-height: 310px;
 	padding: 10px 20px;
 	margin-top: 10px;
 	border-bottom: 1px solid #f4f4f4;
@@ -846,12 +847,12 @@ background-color: rgba(0, 0, 0, 0.10);}
 	transition: all 0.4s ease 0s;
 }
 .course-inner:hover .course-desc h2 a{
-	color:#f1c40f
+	color:#e3954b
 }
 .course-thumb::before {
 	position: absolute;
 	content: "";
-	background-color: rgba(241, 196, 15, 0.95);
+	background-color: rgba(255, 200, 148, 0.60);
 	width:0%;
 	height:100%;
 	top: 0;
@@ -1825,7 +1826,8 @@ margin: 0px 5px;background:#1baad6
 ============================*/
 .call-to-action-sec {
 	background-color: #011e40;
-	background-image: url("../img/call_to_action_bg.jpg");
+	/* background-image: url("../img/call_to_action_bg.jpg"); */
+	background-image: url("../logo.png");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1835,7 +1837,7 @@ margin: 0px 5px;background:#1baad6
 	padding: 40px 0px;
 }
 .call-to-action-overlay {
-  background-color:rgba(34, 37, 58, 0.95);
+  background-color:rgba(255, 255, 255, 0.95);
   height: 100%;
   left: 0;
   position: absolute;

@@ -2,7 +2,8 @@
 <div class="slider">
     <div class="all-slide owl-item">
         <!-- Slider Single Item Start -->
-        <div class="single-slide" style="background-image:url(assets/img/WebsiteSlider/4.png);">
+        <div class="single-slide" style="background-image:url(assets/img/WebsiteSlider/4.png);" data-toggle="modal"
+            data-target="#exampleModal">
             <div class="slider-overlay"></div>
             <div class="slider-wrapper">
                 <div class="slider-text">
@@ -40,3 +41,8 @@
     </div>
 </div>
 <!-- Slider Section End -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <app-consultancy></app-consultancy>
+</div>

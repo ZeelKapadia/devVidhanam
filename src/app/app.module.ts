@@ -17,6 +17,8 @@ import { TestimonialComponent } from './modules/home/testimonial/testimonial.com
 import { EventsComponent } from './modules/home/events/events.component';
 import { CtaComponent } from './modules/home/cta/cta.component';
 import { BlogsComponent } from './modules/home/blogs/blogs.component';
+import { ConsultancyComponent } from './modules/consultancy/consultancy.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -35,11 +37,14 @@ import { BlogsComponent } from './modules/home/blogs/blogs.component';
     EventsComponent,
     CtaComponent,
     BlogsComponent,
-    
+    ConsultancyComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

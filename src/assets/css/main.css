@@ -955,10 +955,15 @@ opacity: 1.00;
 }
 
 .all-course .owl-controls .owl-prev {
+  /*My chnage is below hidden line --> Zeel  */
+visibility: hidden;
   right: 70px;
   position: absolute;transition: all 0.4s ease 0s;
 }
 .all-course .owl-controls .owl-next {
+	  /*My chnage is below hidden line --> Zeel  */
+visibility: hidden;
+
   right: 20px;
   position: absolute;transition: all 0.4s ease 0s;
 }

@@ -1,0 +1,74 @@
+<!-- Modal -->
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header borderLess">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="modal-title" id="exampleModalLabel">Consultancy Form</h5>
+                </div>
+                <div class="col-md-6">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-body borderLess">
+            <form (ngsubmit)="onSubmit()" [formGroup]="formGroup">
+                <div class="col-md-12">
+                    <!-- Name Email -->
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label for="name">{{"Name"}}</label>
+                            <input type="text" name="name" class="form-control" id="name" required
+                                formControlName="name">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="name">{{"Email"}}</label>
+                            <input type="email" class="form-control" name="email" id="email" required
+                                formControlName="email">
+                        </div>
+                    </div>
+                    <!-- Mobile,Place -->
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label for="name">{{"Mobile"}}</label>
+                            <input type="text" name="name" class="form-control" id="name" required
+                                formControlName="mobile">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="name">{{"place"}}</label>
+                            <input type="email" class="form-control" name="email" id="email" required
+                                formControlName="place">
+                        </div>
+                    </div>
+                    <!-- dob birthTime -->
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label for="name">{{"Date of Birth"}}</label>
+                            <input type="text" name="name" class="form-control" id="name" required
+                                formControlName="dob">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="name">{{"Birth Time"}}</label>
+                            <input type="email" class="form-control" name="email" id="email" required
+                                formControlName="birthTime">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <label for="name">{{"Major Problem"}}</label>
+                            <select formControlName="major" class="form-control">
+                                <option [value]="major" *ngFor="let major of dropdownArray">{{major}}</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer borderLess">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+    </div>
+</div>

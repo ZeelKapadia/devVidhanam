@@ -19,6 +19,7 @@ import { CtaComponent } from './modules/home/cta/cta.component';
 import { BlogsComponent } from './modules/home/blogs/blogs.component';
 import { ConsultancyComponent } from './modules/consultancy/consultancy.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ServiceDetailsComponent } from './modules/service-details/service-details.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CtaComponent,
     BlogsComponent,
     ConsultancyComponent,
+    ServiceDetailsComponent,
   ],
   imports: [
     BrowserModule,

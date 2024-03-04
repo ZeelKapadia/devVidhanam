@@ -50,6 +50,7 @@ export class ConsultancyComponent implements OnInit {
     }
 
     if (this.formGroup.valid) {
+      console.log(this.formGroup.value)
       const string = "Hello, My self " + this.formGroup.value.name + " , I m worried about the " + this.formGroup.value.major + ". I am thankful, if you can guide me with my problem \n " + data
       const url = `https://api.whatsapp.com/send?phone=+917567751766&text=${string}`
       window.open(url, "_blank");

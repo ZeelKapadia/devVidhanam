@@ -1,4 +1,4 @@
-<header>
+<header class="header-sticky">
     <!-- Header Topbar Start -->
     <div class="header-top">
         <div class="container">
@@ -57,7 +57,7 @@
                     <div class="menu">
                         <nav id="main-menu" class="main-menu">
                             <ul>
-                                <li class="active"><a href="index-2.html">Home</a>
+                                <li routerLinkActive="active"><a [routerLink]="''">Home</a>
                                     <!-- <ul>
                                         <li><a href="index-2.html">Home Version 1</a></li>
                                         <li><a href="index-3.html">Home Version 2</a></li>
@@ -67,7 +67,7 @@
                                         <li><a href="index-7.html">Home Version 6</a></li>
                                     </ul> -->
                                 </li>
-                                <li><a href="research.html">Service </a>
+                                <li [routerLinkActive]="'active'"><a [routerLink]="'services'">Service </a>
                                     <!-- <ul>
                                         <li><a href="research.html">Research Page</a></li>
                                         <li><a href="research-details.html">Research Details</a></li>
@@ -126,8 +126,9 @@
                                 <span data-toggle="dropdown"><i class="fa fa-search"></i></span>
                                 <div class="search-forum dropdown-menu animation slideUpIn">
                                     <form action="#">
-                                        <input placeholder="Search For Site" type="text">
-                                        <input type="submit" value="Go" />
+                                        <input id="searchBar" name="searchBar" placeholder="Search For Site"
+                                            type="text">
+                                        <input type="submit" value="Go" id="searchButton" name="searchButton" />
                                     </form>
                                 </div>
                             </div>

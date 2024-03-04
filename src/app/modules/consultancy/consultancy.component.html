@@ -21,44 +21,44 @@
                         <div class="form-group col-md-6">
                             <label for="name">{{"Name"}}</label>
                             <input type="text" name="name" class="form-control" id="name" required
-                                formControlName="name">
+                                [autocomplete]="false" formControlName="name">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="name">{{"Email"}}</label>
                             <input type="email" class="form-control" name="email" id="email" required
-                                formControlName="email">
+                                formControlName="email" [autocomplete]="false">
                         </div>
                     </div>
                     <!-- Mobile,Place -->
                     <div class="row">
                         <div class="form-group col-md-6">
                             <label for="name">{{"Mobile"}}</label>
-                            <input type="text" name="name" class="form-control" id="name" required
-                                formControlName="mobile">
+                            <input type="text" name="name" class="form-control" id="mobile" required
+                                formControlName="mobile" [autocomplete]="false">
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="name">{{"place"}}</label>
-                            <input type="email" class="form-control" name="email" id="email" required
-                                formControlName="place">
+                            <label for="name">{{"Birth Place"}}</label>
+                            <input type="email" class="form-control" name="email" id="birthPlace" required
+                                formControlName="place" [autocomplete]="false">
                         </div>
                     </div>
                     <!-- dob birthTime -->
                     <div class="row">
                         <div class="form-group col-md-6">
                             <label for="name">{{"Date of Birth"}}</label>
-                            <input type="text" name="name" class="form-control" id="name" required
-                                formControlName="dob">
+                            <input type="text" name="name" class="form-control" id="dob" required formControlName="dob"
+                                [autocomplete]="false">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="name">{{"Birth Time"}}</label>
-                            <input type="email" class="form-control" name="email" id="email" required
-                                formControlName="birthTime">
+                            <input type="email" class="form-control" name="email" id="birthTime" required
+                                [autocomplete]="false" formControlName="birthTime">
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-group col-md-12">
-                            <label for="name">{{"Major Problem"}}</label>
-                            <select formControlName="major" class="form-control">
+                            <label for="major">{{"Major Problem"}}</label>
+                            <select formControlName="major" id="major" class="form-control">
                                 <option [value]="major" *ngFor="let major of dropdownArray">{{major}}</option>
                             </select>
                         </div>

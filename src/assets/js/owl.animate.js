@@ -5,14 +5,14 @@
  * @author David Deutsch
  * @license The MIT License (MIT)
  */
-;(function($, window, document, undefined) {
+; (function ($, window, document, undefined) {
 
 	/**
 	 * Creates the animate plugin.
 	 * @class The Navigation Plugin
 	 * @param {Owl} scope - The Owl Carousel
 	 */
-	var Animate = function(scope) {
+	var Animate = function (scope) {
 		this.core = scope;
 		this.core.options = $.extend({}, Animate.Defaults, this.core.options);
 		this.swapping = true;
@@ -20,18 +20,18 @@
 		this.next = undefined;
 
 		this.handlers = {
-			'change.owl.carousel': $.proxy(function(e) {
+			'change.owl.carousel': $.proxy(function (e) {
 				if (e.namespace && e.property.name == 'position') {
 					this.previous = this.core.current();
 					this.next = e.property.value;
 				}
 			}, this),
-			'drag.owl.carousel dragged.owl.carousel translated.owl.carousel': $.proxy(function(e) {
+			'drag.owl.carousel dragged.owl.carousel translated.owl.carousel': $.proxy(function (e) {
 				if (e.namespace) {
 					this.swapping = e.type == 'translated';
 				}
 			}, this),
-			'translate.owl.carousel': $.proxy(function(e) {
+			'translate.owl.carousel': $.proxy(function (e) {
 				if (e.namespace && this.swapping && (this.core.options.animateOut || this.core.options.animateIn)) {
 					this.swap();
 				}
@@ -55,7 +55,7 @@
 	 * @protected
 	 * @returns {Boolean|undefined}
 	 */
-	Animate.prototype.swap = function() {
+	Animate.prototype.swap = function () {
 
 		if (this.core.settings.items !== 1) {
 			return;
@@ -81,7 +81,7 @@
 		if (outgoing) {
 			left = this.core.coordinates(this.previous) - this.core.coordinates(this.next);
 			previous.one($.support.animation.end, clear)
-				.css( { 'left': left + 'px' } )
+				.css({ 'left': left + 'px' })
 				.addClass('animated owl-animated-out')
 				.addClass(outgoing);
 		}
@@ -93,8 +93,8 @@
 		}
 	};
 
-	Animate.prototype.clear = function(e) {
-		$(e.target).css( { 'left': '' } )
+	Animate.prototype.clear = function (e) {
+		$(e.target).css({ 'left': '' })
 			.removeClass('animated owl-animated-out owl-animated-in')
 			.removeClass(this.core.settings.animateIn)
 			.removeClass(this.core.settings.animateOut);
@@ -105,7 +105,7 @@
 	 * Destroys the plugin.
 	 * @public
 	 */
-	Animate.prototype.destroy = function() {
+	Animate.prototype.destroy = function () {
 		var handler, property;
 
 		for (handler in this.handlers) {

@@ -20,6 +20,12 @@ import { BlogsComponent } from './modules/home/blogs/blogs.component';
 import { ConsultancyComponent } from './modules/consultancy/consultancy.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ServiceDetailsComponent } from './modules/service-details/service-details.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+
 
 @NgModule({
   declarations: [
@@ -46,7 +52,15 @@ import { ServiceDetailsComponent } from './modules/service-details/service-detai
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-
+    SlickCarouselModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: (http: HttpClient) => { return new TranslateHttpLoader(http, 'assets/i18n', '.json'); },
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

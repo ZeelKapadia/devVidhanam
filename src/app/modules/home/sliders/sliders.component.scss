@@ -1,0 +1,24 @@
+.carousel-container {
+    max-height: 50%;
+    /* Adjust the max-height as needed */
+    width: 100%;
+    overflow: hidden;
+    /* Hide any overflow */
+}
+
+.carousel {
+    width: 100%;
+}
+
+.slide-item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.slide-image {
+    width: 100%;
+    height: 70%;
+    object-fit: contain;
+}

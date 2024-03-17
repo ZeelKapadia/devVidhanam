@@ -4,8 +4,9 @@ import { HomeComponent } from './modules/home/home.component';
 import { ServiceDetailsComponent } from './modules/service-details/service-details.component';
 
 const routes: Routes = [
-  { path: "", pathMatch: "full", component: HomeComponent },
-  { path: "services", pathMatch: "full", component: ServiceDetailsComponent }
+  { path: "", pathMatch: "full", redirectTo: "home" },
+  { path: "home", component: HomeComponent },
+  { path: "services", component: ServiceDetailsComponent }
 ];
 
 @NgModule({

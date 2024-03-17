@@ -185,7 +185,7 @@ textarea:focus, input:focus{
 }
 #scrollUp:hover {
   opacity: 1;
-  color: #fff!important;background:#c9c00;
+  color: #fff!important;background:#c9c00f;
 }
 #scrollUp i {
 display: block;
@@ -617,6 +617,8 @@ transition: all 0.5s ease-out 0s;background:#f1c40f;color:#fff;border-color:#f1c
 }
 .owl-carousel .owl-wrapper,
 .owl-carousel .owl-item {
+	backface-visibility: hidden;
+	transform: translate3d(0,0,0);
     -webkit-backface-visibility: hidden;
     -webkit-transform: translate3d(0, 0, 0);	
 }
@@ -1612,7 +1614,8 @@ margin-bottom: 10px;
 .testimonial-client-info {
 	display: inline-block;
 	width: 20%;
-	float: left;
+	/* float: left;
+	float: left; */
 }
 .single-testimonial-v2 h2 {
 	color: #f6c405;
@@ -1748,7 +1751,7 @@ margin: 0px 5px;background:#1baad6
 }
 .event-thumb {
 	display: inline-block;
-	float: left;
+	/* float: left; */
 	width: 180px;
 	position: relative;
 	overflow: hidden;
@@ -1993,7 +1996,7 @@ color:#f1c40f;
 }
 .post-meta a i {
 	color: #f1c40f;
-	margin-right: ;
+	/* margin-right: ; */
 	margin-right: 10px;
 }
 .post-meta li a {
@@ -2004,7 +2007,7 @@ color:#f1c40f;
 }
 .post-tags {
   display: inline-block;
-  float: right;
+  /* float: right; */
 }
 .blog-title  h2 {
 color: #0f0f0f;
@@ -2238,7 +2241,7 @@ h1.join-us-form-title {
 .contact-info-text span {
 	color: #999999;
 	font-size: 16px;
-	font-weight: ;
+	/* font-weight: ; */
 	display: inline-block;
 	width: 100%;
 }
@@ -2423,7 +2426,7 @@ padding-left: 0;
 .coruse-left-text {
 	display: inline-block;
 	width: 25%;
-	float: left;
+	/* float: left; */
 }
 .coruse-center-text {
 	width: 50%;
@@ -2444,7 +2447,7 @@ padding-left: 0;
 }
 .insturctor-img {
 	display: inline-block;
-	float: left;
+	/* float: left; */
 	width: 60px;
 	height: 60px;
 	border-radius: 100%;
@@ -3174,7 +3177,7 @@ font-size: 40px;
 	margin-right: 10px;
 	position: relative;
 	width: 40px;
-	float: left;
+	/* float: left; */
 }
 .info-text {
 	display: inline-block;
@@ -3341,7 +3344,7 @@ color: #011e40;
 Home 6 
 ============================*/
 .hd-top-v2-sec {
-	background: #10cb7fnone repeat scroll 0 0;
+	background: #10cb7f none repeat scroll 0 0;
 	padding: 40px 0;
 	background-image: url(../img/hdbg.jpg);
 	background-repeat: no-repeat;
@@ -3459,20 +3462,20 @@ color: #f1c40f
 }
 .course-instructor-left {
 	display: inline-block;
-	float: left;
+	/* float: left; */
 	width: 80%;
 }
 .course-instructor-right {
 	display: inline-block;
 	text-align: right;
-	float: right;
+	/* float: right; */
 	margin-top: 23px;
 	width: 20%;
 }
 .instructor-thumb {
 	width: 30%;
 	border-radius: 100%;
-	float: left;
+	/* float: left; */
 	display: inline-block;
 }
 .instructor-thumb img {

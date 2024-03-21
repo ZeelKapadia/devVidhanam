@@ -18,129 +18,81 @@
         <div class="row">
             <div class="course-list-sec">
                 <div class="all-course">
-                    <!-- Course Single Inner Start -->
-                    <div class="course-inner">
-                        <div class="course-thumb">
-                            <img src="/assets/img/services/Jyotish.png" style="width: 70% !important; margin:0 auto;" />
-                            <!-- <div class="teacher-thumb">
-                                <img src="/assets/img/teacher_1.jpg" alt="" />
-                            </div> -->
-                            <div class="readmore-button">
-                                <a href="#">Learn More</a>
-                            </div>
-                        </div>
-                        <!-- <div class="course-meta">
-                            <span class="course-price">$550</span>
-                            <span class="course-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                            </span>
-                        </div> -->
-                        <div class="course-desc">
-                            <h2 class="text-center"><a href="#">ज्योतिष</a></h2>
-                            <p class="text-center"><strong>ज्योतिषामयनं चक्षु:</strong></p>
+                    <ngx-slick-carousel #slickModal="slick-carousel" [config]="slideConfig" class="carousel">
+                        <div ngxSlickItem class="slide-item">
+                            <div class="course-inner">
+                                <div class="course-thumb">
+                                    <img src="/assets/img/services/Jyotish.png"
+                                        style="width: 70% !important; margin:0 auto;" />
+                                    <div class="readmore-button">
+                                        <a href="#">Learn More</a>
+                                    </div>
+                                </div>
+                                <div class="course-desc">
+                                    <h2 class="text-center"><a href="#">ज्योतिष</a></h2>
+                                    <p class="text-center"><strong>ज्योतिषामयनं चक्षु:</strong></p>
 
-                            <p class="text-justify">शास्त्रों के अनुसार वेद भगवान के छः अंग बतायी गयी है| उनमेसे ज्योतिष
-                                भगवन की आँखे है|
-                                ग्रहो की परिस्थिति के अनुसार होने
-                                वाली गतिविधियों से ही ज्योतिष शास्त्र बनता है| और इससे भविष्य में होने वाली सभी समस्याओं
-                                का समाधान पा सकते है इसीलिए यह
-                                शास्त्र भगवन की आँखे है|</p>
-                        </div>
-                        <!-- <div class="course-info">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-user"></i>24 Seats</a></li>
-                                <li><a href="#"><i class="fa fa-clock-o"></i>4 hour</a></li>
-                                <li><a href="#"><i class="fa fa-heart"></i>Save</a></li>
-                            </ul>
-                        </div> -->
-                    </div>
-                    <!-- Course Single Inner End -->
-                    <!-- Course Single Inner Start -->
-                    <div class="course-inner">
-                        <div class="course-thumb">
-                            <img src="/assets/img/services/KarmaKand.png" style="width: 70% !important; margin:0 auto;"
-                                alt="" />
-                            <!-- <div class="teacher-thumb">
-                                <img src="/assets/img/teacher_2.jpg" alt="" />
-                            </div> -->
-                            <div class="readmore-button">
-                                <a href="#">Learn More</a>
+                                    <p class="text-justify">शास्त्रों के अनुसार वेद भगवान के छः अंग बतायी गयी है| उनमेसे
+                                        ज्योतिष
+                                        भगवन की आँखे है|
+                                        ग्रहो की परिस्थिति के अनुसार होने
+                                        वाली गतिविधियों से ही ज्योतिष शास्त्र बनता है| और इससे भविष्य में होने वाली सभी
+                                        समस्याओं
+                                        का समाधान पा सकते है इसीलिए यह
+                                        शास्त्र भगवन की आँखे है|</p>
+                                </div>
                             </div>
                         </div>
-                        <!-- <div class="course-meta">
-                            <span class="course-price">$250</span>
-                            <span class="course-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                            </span>
-                        </div> -->
-                        <div class="course-desc">
-                            <h2 class="text-center"><a href="#">कर्मकांड</a></h2>
-                            <p class="text-center"><strong>देवाधीनं जगत सर्वम्</strong></p>
+                        <div ngxSlickItem class="slide-item">
+                            <div class="course-inner">
+                                <div class="course-thumb">
+                                    <img src="/assets/img/services/KarmaKand.png"
+                                        style="width: 70% !important; margin:0 auto;" alt="" />
 
-                            <p class="text-justify">यह संपूर्ण सृष्टि देवों के आधीन है। और उनके द्वारा ही नियंत्रित है।
-                                तथा हर मनुष्य का
-                                कर्तव्य है की समय - समय पर देवो की
-                                पूजा उपासना आदि कार्यो से देवो को प्रसन्न करें। इसी क्रिया का नाम कर्मकांड है। जिस देवता
-                                को जो द्रव्य पसंद है उस द्रव्य
-                                सें उस देवता की पूजा करना तथा श्रद्धा पूर्वक उनसे आशीर्वाद प्राप्त करना मनुष्य के लिए
-                                हितकारक है।</p>
-                        </div>
-                        <!-- <div class="course-info">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-user"></i>24 Seats</a></li>
-                                <li><a href="#"><i class="fa fa-clock-o"></i>4 hour</a></li>
-                                <li><a href="#"><i class="fa fa-heart"></i>Save</a></li>
-                            </ul>
-                        </div> -->
-                    </div>
-                    <!-- Course Single Inner End -->
-                    <!-- Course Single Inner Start -->
-                    <div class="course-inner">
-                        <div class="course-thumb">
-                            <img src="/assets/img/services/SastraParichay.png" alt=""
-                                style="width: 70% !important; margin:0 auto;" />
-                            <!-- <div class="teacher-thumb">
-                                <img src="/assets/img/teacher_3.jpg" alt="" />
-                            </div> -->
-                            <div class="readmore-button">
-                                <a href="#">Learn More</a>
+                                    <div class="readmore-button">
+                                        <a href="#">Learn More</a>
+                                    </div>
+                                </div>
+                                <div class="course-desc">
+                                    <h2 class="text-center"><a href="#">कर्मकांड</a></h2>
+                                    <p class="text-center"><strong>देवाधीनं जगत सर्वम्</strong></p>
+
+                                    <p class="text-justify">यह संपूर्ण सृष्टि देवों के आधीन है। और उनके द्वारा ही
+                                        नियंत्रित है।
+                                        तथा हर मनुष्य का
+                                        कर्तव्य है की समय - समय पर देवो की
+                                        पूजा उपासना आदि कार्यो से देवो को प्रसन्न करें। इसी क्रिया का नाम कर्मकांड है।
+                                        जिस देवता
+                                        को जो द्रव्य पसंद है उस द्रव्य
+                                        सें उस देवता की पूजा करना तथा श्रद्धा पूर्वक उनसे आशीर्वाद प्राप्त करना मनुष्य
+                                        के लिए
+                                        हितकारक है।</p>
+                                </div>
                             </div>
                         </div>
-                        <!-- <div class="course-meta">
-                            <span class="course-price">$350</span>
-                            <span class="course-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                            </span>
-                        </div> -->
-                        <div class="course-desc">
-                            <h2 class="text-center"><a href="#">शास्र</a></h2>
-                            <p class="text-justify">हमारे ऋषिओं ने अत्यधिक कठिन तपस्या करके जीवन जीने का रास्ता दिखाते
-                                हूए अनेक शास्त्रों की
-                                रचना की है और हमें उन राह पर
-                                चलतें हूए शास्त्रों का पठन तथा अनुकरण करना चाहिए। चूँकि शास्त्रों में कई बार ऐसी बातें
-                                भी आती है जो हमरी समाज के बहार
-                                है। तब योग्य मार्गदर्शन सें हमें वह बात सरलता से समाज में आ सकती है।</p>
+                        <div ngxSlickItem class="slide-item">
+                            <div class="course-inner">
+                                <div class="course-thumb">
+                                    <img src="/assets/img/services/SastraParichay.png" alt=""
+                                        style="width: 70% !important; margin:0 auto;" />
+                                    <div class="readmore-button">
+                                        <a href="#">Learn More</a>
+                                    </div>
+                                </div>
+                                <div class="course-desc">
+                                    <h2 class="text-center"><a href="#">शास्र</a></h2>
+                                    <p class="text-justify">हमारे ऋषिओं ने अत्यधिक कठिन तपस्या करके जीवन जीने का रास्ता
+                                        दिखाते
+                                        हूए अनेक शास्त्रों की
+                                        रचना की है और हमें उन राह पर
+                                        चलतें हूए शास्त्रों का पठन तथा अनुकरण करना चाहिए। चूँकि शास्त्रों में कई बार ऐसी
+                                        बातें
+                                        भी आती है जो हमरी समाज के बहार
+                                        है। तब योग्य मार्गदर्शन सें हमें वह बात सरलता से समाज में आ सकती है।</p>
+                                </div>
+                            </div>
                         </div>
-                        <!-- <div class="course-info">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-user"></i>24 Seats</a></li>
-                                <li><a href="#"><i class="fa fa-clock-o"></i>4 hour</a></li>
-                                <li><a href="#"><i class="fa fa-heart"></i>Save</a></li>
-                            </ul>
-                        </div> -->
-                    </div>
+                    </ngx-slick-carousel>
                 </div>
             </div>
         </div>

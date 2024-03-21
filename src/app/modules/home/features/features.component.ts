@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./features.component.scss']
 })
 export class FeaturesComponent {
-
+  slideConfig = {
+    "slidesToShow": 3,
+    "slidesToScroll": 1,
+    "dots": false,
+    "infinite": true,
+    "autoplay": false,
+    "autoplaySpeed": 2500,
+    "prevArrow": false,
+    "nextArrow": false,
+  };
 }

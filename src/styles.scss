@@ -1192,15 +1192,15 @@ input:focus {
     margin-right: 6px;
 }
 
-.course-list-sec .owl-stage-outer {
+.course-list-sec {
     padding: 15px 0;
 }
 
-.all-course .owl-item {
+.all-course .slide-item {
     padding: 0 20px;
 }
 
-.all-course .owl-controls {
+.all-course .slide-controls {
     position: absolute;
     top: -90px;
     width: 100%;
@@ -1212,7 +1212,7 @@ input:focus {
     opacity: 1.00;
 }
 
-.all-course .owl-controls .owl-prev {
+.prev {
     /*My chnage is below hidden line --> Zeel  */
     visibility: hidden;
     right: 70px;
@@ -1220,7 +1220,7 @@ input:focus {
     transition: all 0.4s ease 0s;
 }
 
-.all-course .owl-controls .owl-next {
+.next {
     /*My chnage is below hidden line --> Zeel  */
     visibility: hidden;
 
@@ -1229,8 +1229,8 @@ input:focus {
     transition: all 0.4s ease 0s;
 }
 
-.all-course .owl-controls .owl-prev i,
-.all-course .owl-controls .owl-next i {
+.prev,
+.next {
     background: #f1c40f;
     color: #011e40;
     font-size: 22px;
@@ -1242,14 +1242,14 @@ input:focus {
     font-weight: normal;
 }
 
-.all-course .owl-controls .owl-next i:hover {
+.next:hover {
     transition: all 0.5s ease-out 0s;
     background: #fff;
     color: #011e40;
     border-color: #fff;
 }
 
-.all-course .owl-controls .owl-prev i:hover {
+.prev:hover {
     transition: all 0.5s ease-out 0s;
     background: #fff;
     color: #011e40;
@@ -2307,9 +2307,9 @@ input:focus {
 ============================*/
 .call-to-action-sec {
     background-color: #011e40;
-    /* background-image: url("../img/call_to_action_bg.jpg"); */
+    background-image: url("assets/img/call_to_action_bg.jpg");
     // background-image: url("../logo.png");
-    background-image: url("assets/img/logo.png");
+    // background-image: url("assets/img/logo.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2320,7 +2320,8 @@ input:focus {
 }
 
 .call-to-action-overlay {
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(34, 37, 58, 0.95);
+    // background-color: rgba(255, 255, 255, 0);
     height: 100%;
     left: 0;
     position: absolute;

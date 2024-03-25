@@ -11,96 +11,22 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="why-choose-all">
-                    <!-- Single Why Choose Inner Start -->
-                    <div class="why-choose-inner">
-                        <div class="why-choose-thumb">
-                            <img src="/assets/img/why_us_1.jpg" alt="" />
-                            <div class="why-choose-icon">
-                                <img src="/assets/img/icon/employees.png" alt="" />
+                    <ngx-slick-carousel #slickModal="slick-carousel" [config]="slideConfig" class="carousel">
+                        <div ngxSlickItem class="slide-item" *ngFor="let data of dataLists">
+                            <div class="why-choose-inner" style="margin:0px 10px">
+                                <div class="why-choose-thumb">
+                                    <img [src]="data.thumbImage" alt="" />
+                                    <div class="why-choose-icon">
+                                        <img [src]="data.icon" alt="" />
+                                    </div>
+                                </div>
+                                <div class="why-choose-text">
+                                    <h2><a href="#">{{data.title}}</a></h2>
+                                    <p>{{data.description}}</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="why-choose-text">
-                            <h2><a href="#">Friendly Environment</a></h2>
-                            <p>Timeam nusquam usu ut, civibus fabellas eleifend eu vis. Id ipsum civibus pri, te
-                                ignota dignissim mel, iisque recteque.</p>
-                        </div>
-                    </div>
-                    <!-- Single Why Choose Inner End -->
-                    <!-- Single Why Choose Inner Start -->
-                    <div class="why-choose-inner">
-                        <div class="why-choose-thumb">
-                            <img src="/assets/img/why_us_2.jpg" alt="" />
-                            <div class="why-choose-icon">
-                                <img src="/assets/img/icon/statistics.png" alt="" />
-                            </div>
-                        </div>
-                        <div class="why-choose-text">
-                            <h2><a href="#">Expert Instructor</a></h2>
-                            <p>Timeam nusquam usu ut, civibus fabellas eleifend eu vis. Id ipsum civibus pri, te
-                                ignota dignissim mel, iisque recteque.</p>
-                        </div>
-                    </div>
-                    <!-- Single Why Choose Inner End -->
-                    <!-- Single Why Choose Inner Start -->
-                    <div class="why-choose-inner">
-                        <div class="why-choose-thumb">
-                            <img src="/assets/img/why_us_3.jpg" alt="" />
-                            <div class="why-choose-icon">
-                                <img src="/assets/img/icon/locked.png" alt="" />
-                            </div>
-                        </div>
-                        <div class="why-choose-text">
-                            <h2><a href="#">Group Teaching</a></h2>
-                            <p>Timeam nusquam usu ut, civibus fabellas eleifend eu vis. Id ipsum civibus pri, te
-                                ignota dignissim mel, iisque recteque.</p>
-                        </div>
-                    </div>
-                    <!-- Single Why Choose Inner End -->
-                    <!-- Single Why Choose Inner Start -->
-                    <div class="why-choose-inner">
-                        <div class="why-choose-thumb">
-                            <img src="/assets/img/why_us_1.jpg" alt="" />
-                            <div class="why-choose-icon">
-                                <img src="/assets/img/icon/employees.png" alt="" />
-                            </div>
-                        </div>
-                        <div class="why-choose-text">
-                            <h2><a href="#">Friendly Environment</a></h2>
-                            <p>Timeam nusquam usu ut, civibus fabellas eleifend eu vis. Id ipsum civibus pri, te
-                                ignota dignissim mel, iisque recteque.</p>
-                        </div>
-                    </div>
-                    <!-- Single Why Choose Inner End -->
-                    <!-- Single Why Choose Inner Start -->
-                    <div class="why-choose-inner">
-                        <div class="why-choose-thumb">
-                            <img src="/assets/img/why_us_2.jpg" alt="" />
-                            <div class="why-choose-icon">
-                                <img src="/assets/img/icon/statistics.png" alt="" />
-                            </div>
-                        </div>
-                        <div class="why-choose-text">
-                            <h2><a href="#">Expert Instructor</a></h2>
-                            <p>Timeam nusquam usu ut, civibus fabellas eleifend eu vis. Id ipsum civibus pri, te
-                                ignota dignissim mel, iisque recteque.</p>
-                        </div>
-                    </div>
-                    <!-- Single Why Choose Inner End -->
-                    <!-- Single Why Choose Inner Start -->
-                    <div class="why-choose-inner">
-                        <div class="why-choose-thumb">
-                            <img src="/assets/img/why_us_3.jpg" alt="" />
-                            <div class="why-choose-icon">
-                                <img src="/assets/img/icon/locked.png" alt="" />
-                            </div>
-                        </div>
-                        <div class="why-choose-text">
-                            <h2><a href="#">Group Teaching</a></h2>
-                            <p>Timeam nusquam usu ut, civibus fabellas eleifend eu vis. Id ipsum civibus pri, te
-                                ignota dignissim mel, iisque recteque.</p>
-                        </div>
-                    </div>
-                    <!-- Single Why Choose Inner End -->
+                    </ngx-slick-carousel>
                 </div>
             </div>
         </div>

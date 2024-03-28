@@ -18,10 +18,6 @@ export class SlidersComponent {
     "autoplaySpeed": 2500,
     "prevArrow": `<button class="slick-prev slick-arrow" aria-label="Previous" type="button"></button>`,
     "nextArrow": `<button class="slick-next slick-arrow" aria-label="Next" type="button"></button>`,
-    // "prevArrow": false,
-    // "nextArrow": false,
   };
-
-  listsImages = ["assets/img/WebsiteSlider/4.png", "assets/img/WebsiteSlider/ForIndia.png", "assets/img/WebsiteSlider/ForOutofIndia(2).png", "assets/img/WebsiteSlider/ForOutofIndia.jpg"]
 
 }

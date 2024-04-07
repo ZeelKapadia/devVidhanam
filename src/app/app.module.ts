@@ -25,6 +25,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { ContactComponent } from './modules/contact/contact.component';
+import { ProvideServiceComponent } from './modules/provide-service/provide-service.component';
 
 
 @NgModule({
@@ -46,6 +48,8 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
     BlogsComponent,
     ConsultancyComponent,
     ServiceDetailsComponent,
+    ContactComponent,
+    ProvideServiceComponent,
   ],
   imports: [
     BrowserModule,

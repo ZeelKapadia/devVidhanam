@@ -1,0 +1,166 @@
+<!-- Page Heading Section Start -->
+<div class="pagehding-sec">
+    <div class="images-overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="page-heading">
+                    <h1>Services</h1>
+                </div>
+                <div class="breadcrumb-list">
+                    <!-- <ul>
+                        <li><a href="index-2.html">Home</a></li>
+                        <li><a href="#">Event 3 Column</a></li>
+                    </ul> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page Heading Section End -->
+<!-- Event Section Start -->
+<div class="event-v2-sec pt-100 pb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6" *ngFor="let item of servicesLists;let i = index">
+                        <div class="event-inner" (click)="onNavigation(i)">
+                            <div class="event-thumb">
+                                <img [src]="item.img" alt="" />
+                                <div class="event-overlay">
+                                    <a><i class="fa fa-external-link"></i></a>
+                                </div>
+                            </div>
+                            <div class="event-desc">
+                                <h2><a>{{item.title}}</a></h2>
+                                <div class="event-meta">
+                                    <ul>
+                                        <li><i class="fa fa-map-marker"></i>{{item.place}}</li>
+                                        <li><i class="fa fa-clock-o"></i>{{item.time}}</li>
+                                    </ul>
+                                </div>
+                                <p>{{item.description}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-md-4 col-sm-6">
+                        <div class="event-inner">
+                            <div class="event-thumb">
+                                <img src="assets/img/s2.jpg" alt="" />
+                                <div class="event-overlay">
+                                    <a href="event-details.html"><i class="fa fa-external-link"></i></a>
+                                </div>
+                            </div>
+                            <div class="event-desc">
+                                <h2><a href="#">Mel apeirian salutatus scripserit ex</a></h2>
+                                <div class="event-meta">
+                                    <ul>
+                                        <li><i class="fa fa-map-marker"></i>Californiya , United State</li>
+                                        <li><i class="fa fa-clock-o"></i>08.00 - 11.30</li>
+                                    </ul>
+                                </div>
+                                <p>Mel apeirian salutatus scripserit ex, omnesque aliquando moderatius cum et. Affert
+                                    euismod scaevola qui cu.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="event-inner">
+                            <div class="event-thumb">
+                                <img src="assets/img/s3.jpg" alt="" />
+                                <div class="event-overlay">
+                                    <a href="event-details.html"><i class="fa fa-external-link"></i></a>
+                                </div>
+                            </div>
+                            <div class="event-desc">
+                                <h2><a href="#">Mel apeirian salutatus scripserit ex</a></h2>
+                                <div class="event-meta">
+                                    <ul>
+                                        <li><i class="fa fa-map-marker"></i>Californiya , United State</li>
+                                        <li><i class="fa fa-clock-o"></i>08.00 - 11.30</li>
+                                    </ul>
+                                </div>
+                                <p>Mel apeirian salutatus scripserit ex, omnesque aliquando moderatius cum et. Affert
+                                    euismod scaevola qui cu.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="event-inner">
+                            <div class="event-thumb">
+                                <img src="assets/img/s4.jpg" alt="" />
+                                <div class="event-overlay">
+                                    <a href="event-details.html"><i class="fa fa-external-link"></i></a>
+                                </div>
+                            </div>
+                            <div class="event-desc">
+                                <h2><a href="#">Mel apeirian salutatus scripserit ex</a></h2>
+                                <div class="event-meta">
+                                    <ul>
+                                        <li><i class="fa fa-map-marker"></i>Californiya , United State</li>
+                                        <li><i class="fa fa-clock-o"></i>08.00 - 11.30</li>
+                                    </ul>
+                                </div>
+                                <p>Mel apeirian salutatus scripserit ex, omnesque aliquando moderatius cum et. Affert
+                                    euismod scaevola qui cu.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="event-inner">
+                            <div class="event-thumb">
+                                <img src="assets/img/s5.jpg" alt="" />
+                                <div class="event-overlay">
+                                    <a href="event-details.html"><i class="fa fa-external-link"></i></a>
+                                </div>
+                            </div>
+                            <div class="event-desc">
+                                <h2><a href="#">Mel apeirian salutatus scripserit ex</a></h2>
+                                <div class="event-meta">
+                                    <ul>
+                                        <li><i class="fa fa-map-marker"></i>Californiya , United State</li>
+                                        <li><i class="fa fa-clock-o"></i>08.00 - 11.30</li>
+                                    </ul>
+                                </div>
+                                <p>Mel apeirian salutatus scripserit ex, omnesque aliquando moderatius cum et. Affert
+                                    euismod scaevola qui cu.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="event-inner">
+                            <div class="event-thumb">
+                                <img src="assets/img/s6.jpg" alt="" />
+                                <div class="event-overlay">
+                                    <a href="event-details.html"><i class="fa fa-external-link"></i></a>
+                                </div>
+                            </div>
+                            <div class="event-desc">
+                                <h2><a href="#">Mel apeirian salutatus scripserit ex</a></h2>
+                                <div class="event-meta">
+                                    <ul>
+                                        <li><i class="fa fa-map-marker"></i>Californiya , United State</li>
+                                        <li><i class="fa fa-clock-o"></i>08.00 - 11.30</li>
+                                    </ul>
+                                </div>
+                                <p>Mel apeirian salutatus scripserit ex, omnesque aliquando moderatius cum et. Affert
+                                    euismod scaevola qui cu.</p>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="col-md-12">
+                        <div class="pagination custom-pagination text-center">
+                            <ul class="pagination custom-pagination">
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
